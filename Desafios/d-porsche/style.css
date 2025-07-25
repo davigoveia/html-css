@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Packy Great;
+    src: url(fontes/packy_great/PackyGreat.ttf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gobold;
+    src: url(fontes/gobold/Gobold\ Bold.otf);
+}
+
+@font-face {
+    font-family: Ophelia;
+    src: url(fontes/ophelia_2/OPHELIA.otf);
+}
+
+:root{
+    --cor01: #D0E6FF;
+    --cor02: #A4CDFC;
+    --cor03: #6598D2;
+    --cor04: #13447c;
+    --cor05: #1A3452;
+
+
+    --fonte-destaque: 'Packy Great', sans-serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-gobold: 'Gobold', sans-serif;
+    --fonte-ophelia: 'Ophelia', sans-serif;
+}
+
+body{
+   /* background-image: linear-gradient(to right, var(--cor04), var(--cor02));*/
+   background-image: url(imagens/montanhas.png);
+   padding: 0;
+   margin: 0;
+}
+
+header{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+header >h1{
+    font-family: var(--fonte-ophelia);
+    text-align: center;
+    margin: 8px 0 0 0;
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+}
+
+
+
+header >p{
+    font-family: var(--fonte-padrao);
+    top: 0;
+    left: 50%;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+}
+
+.container{
+    margin: 30px 0 0 200px;
+    width: 70%;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.container img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--cor04);
+    transition: all ease-in-out 0.6s;
+}
+
+.container img:hover{
+    width: 70%;
+}
+
+.icone{
+    display: inline-block;
+    width: 650px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--cor04);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+.icone:hover{
+    font-size: 18px;
+    transition: all ease-in-out 0.4s;
+}
+
+.icone > h1{
+    font-family: var(--fonte-ophelia);
+    color: var(--cor04);
+    margin: 5px;
+}
+
+.icone > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    margin: 0px;
+}
+
+.performance{
+    display: inline-block;
+    width: 400px;
+    padding: 10px;
+    margin: 60px 0 0 20px;
+    border-radius: 10px;
+    border: 2px solid var(--cor04);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+.performance:hover{
+    font-size: 18px;
+    transition: all ease-in-out 0.4s;
+}
+
+.performance > h1{
+    font-family: var(--fonte-ophelia);
+    color: var(--cor04);
+    margin: 5px;
+}
+
+.performance > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    margin: 0px;
+}
+
+
+.performance > ul{
+    font-family: var(--fonte-padrao);
+    color: white;
+    margin: 5px 0 0 0;
+}
+
+.design{
+    display: inline-block;
+    width: 650px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--cor04);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+.design:hover{
+    font-size: 18px;
+    transition: all ease-in-out 0.4s;
+}
+
+.design > h1{
+    font-family: var(--fonte-ophelia);
+    color: white;
+    margin: 5px;
+}
+
+.design > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    margin: 0px;
+}
+
+.tecnologia{
+    display: inline-block;
+    width: 400px;
+    padding: 10px;
+    margin: 60px 0 0 20px;
+    border-radius: 10px;
+    border: 2px solid var(--cor04);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+.tecnologia:hover{
+   font-size: 17px;
+    transition: all ease-in-out 0.4s; 
+}
+
+.tecnologia > h1{
+   font-family: var(--fonte-ophelia);
+    color: white;
+    margin: 5px; 
+}
+
+.tecnologia > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    margin: 0px;
+}
+
+.tecnologia > ul{
+    font-family: var(--fonte-padrao);
+    color: white;
+    margin: 5px 0 0 0;
+}
+
+footer{
+    display: inline-block;
+    width: 650px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--cor04);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+footer > h1{
+    font-family: var(--fonte-ophelia);
+    color: white;
+    margin: 5px;
+}
+
+footer > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    margin: 0px;
+}
+
+.rodape{
+    background-color: var(--cor05);
+    color: white;
+    width: 95%;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid var(--cor04);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+.rodape > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+.rodape > p > a:hover{
+    text-decoration: underline;
+}
