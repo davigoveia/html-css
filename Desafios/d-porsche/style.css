@@ -17,6 +17,11 @@
     src: url(fontes/ophelia_2/OPHELIA.otf);
 }
 
+@font-face {
+    font-family: Vintage Mohai;
+    src: url(fontes/morgan_4/Morgan.ttf) format(opentype);
+}
+
 :root{
     --cor01: #D0E6FF;
     --cor02: #A4CDFC;
@@ -29,6 +34,8 @@
     --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-gobold: 'Gobold', sans-serif;
     --fonte-ophelia: 'Ophelia', sans-serif;
+    --fonte-vintage: 'Vintage Mohai', sans-serif;
+
 }
 
 body{
@@ -47,7 +54,7 @@ header{
 header >h1{
     background: transparent;
     backdrop-filter: blur(10px);
-    font-family: var(--fonte-ophelia);
+    font-family: var(--fonte-vintage);
     text-align: center;
     margin: 8px 0 0 0;
     text-decoration: none;
@@ -107,7 +114,7 @@ header >p{
 }
 
 .icone > h1{
-    font-family: var(--fonte-ophelia);
+    font-family: var(--fonte-vintage);
     color: var(--cor04);
     margin: 5px;
 }
@@ -136,7 +143,7 @@ header >p{
 }
 
 .performance > h1{
-    font-family: var(--fonte-ophelia);
+    font-family: var(--fonte-vintage);
     color: var(--cor04);
     margin: 5px;
 }
@@ -172,7 +179,7 @@ header >p{
 }
 
 .design > h1{
-    font-family: var(--fonte-ophelia);
+    font-family: var(--fonte-vintage);
     color: var(--cor04);
     margin: 5px;
 }
@@ -201,7 +208,7 @@ header >p{
 }
 
 .tecnologia > h1{
-   font-family: var(--fonte-ophelia);
+   font-family: var(--fonte-vintage);
     color: var(--cor04);
     margin: 5px; 
 }
@@ -229,7 +236,7 @@ footer{
 }
 
 footer > h1{
-    font-family: var(--fonte-ophelia);
+    font-family: var(--fonte-vintage);
     color: white;
     margin: 5px;
 }
